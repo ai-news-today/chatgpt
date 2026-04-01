@@ -66,6 +66,105 @@ hugo mod graph
 hugo server
 ```
 
+## 常见操作文档
+
+### 1) 调整首页布局（page/profile/hero/card）
+
+编辑 `config/_default/params.toml`：
+
+```toml
+[homepage]
+layout = "card"
+showRecent = true
+showRecentItems = 6
+cardView = true
+cardViewScreenWidth = false
+```
+
+参考文档：[Blowfish 主页布局](https://blowfish.page/zh-cn/docs/homepage-layout/)
+
+### 1.1) 切换主题配色（黑蓝新闻风）
+
+编辑 `config/_default/params.toml`：
+
+```toml
+colorScheme = "chatgptnews"
+```
+
+当前已提供三套配色：
+
+- `chatgptnews`：平衡版（默认）
+- `chatgptnews-dark`：更强对比、科技感更明显
+- `chatgptnews-soft`：更柔和、长时间阅读更舒适
+
+配色文件位置：
+
+- `assets/css/schemes/chatgptnews.css`
+- `assets/css/schemes/chatgptnews-dark.css`
+- `assets/css/schemes/chatgptnews-soft.css`
+
+AI 背景光效在 `assets/css/custom.css`，如需关闭可清空该文件。
+
+### 2) 配置导航栏与二级菜单
+
+分别编辑：
+
+- `config/_default/menus.zh-cn.toml`
+- `config/_default/menus.en.toml`
+
+一级菜单与二级菜单示例：
+
+```toml
+[[main]]
+name = "时间线"
+weight = 30
+
+[[main]]
+name = "模型发布"
+parent = "时间线"
+pageRef = "/timeline/model-releases"
+weight = 31
+```
+
+参考文档：[Blowfish 配置（语言与菜单）](https://blowfish.page/zh-cn/docs/configuration/)
+
+### 3) 新增文章并让首页卡片自动展示
+
+1. 在 `content/articles/` 新建双语文章（如 `xxx.zh-cn.md` 和 `xxx.en.md`）。
+2. Front matter 至少包含：`title`、`date`、`description`、`summary`。
+3. 确认 `params.toml` 中包含：
+
+```toml
+mainSections = ["articles"]
+```
+
+这样首页 `showRecent` 区域会自动读取文章并显示卡片。
+
+### 4) 新增时间线子栏目
+
+按目录添加双语 `_index` 文件，例如：
+
+- `content/timeline/model-releases/_index.zh-cn.md`
+- `content/timeline/model-releases/_index.en.md`
+
+然后在中英 `menus.*.toml` 中追加对应菜单项。
+
+### 5) 本地验证清单
+
+```bash
+cd /Users/zhangjane/home_work_space/chatgpt
+hugo mod graph
+hugo
+hugo server
+```
+
+检查项：
+
+- 首页是否为 card 布局
+- 首页是否展示最近文章卡片
+- 导航与二级菜单是否可点击且无 404
+- 中英页面切换是否正常
+
 ## 部署
 
 推送到 `main` 后，GitHub Actions 会自动构建并发布到 GitHub Pages。

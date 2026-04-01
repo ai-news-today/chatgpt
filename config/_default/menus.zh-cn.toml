@@ -4,6 +4,48 @@ pageRef = "/"
 weight = 10
 
 [[main]]
+name = "文章"
+pageRef = "/articles"
+weight = 20
+
+[[main]]
+name = "标签"
+pageRef = "/tags"
+weight = 25
+
+[[main]]
+name = "分类"
+pageRef = "/categories"
+weight = 26
+
+[[main]]
+name = "时间线"
+weight = 30
+
+[[main]]
+name = "模型发布"
+parent = "时间线"
+pageRef = "/timeline/model-releases"
+weight = 31
+
+[[main]]
+name = "功能变更"
+parent = "时间线"
+pageRef = "/timeline/feature-changes"
+weight = 32
+
+[[main]]
+name = "大事件"
+parent = "时间线"
+pageRef = "/timeline/major-events"
+weight = 33
+
+[[main]]
+name = "关于我们"
+pageRef = "/about"
+weight = 40
+
+[[main]]
 name = "GitHub"
 url = "https://github.com/ai-news-today/chatgpt"
-weight = 20
+weight = 50

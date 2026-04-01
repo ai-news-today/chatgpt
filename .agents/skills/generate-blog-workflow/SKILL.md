@@ -1,9 +1,9 @@
 ---
-name: familypro-blog-workflow
-description: Use when creating, rewriting, expanding, translating, localizing, fact-checking, SEO-polishing, or reviewing Hugo multilingual posts for the ChatGPT News site.
+name: generate-blog-workflow
+description: Use when creating, rewriting, expanding, translating, localizing, fact-checking, SEO-polishing, or reviewing multilingual Hugo blog posts.
 ---
 
-# ChatGPT News Blog Workflow
+# generate-blog-workflow
 
 Use this skill for blog-content work in the `chatgpt` repo, including:
 
@@ -46,14 +46,22 @@ You may need more than one reference file, but only load the ones relevant to th
 - If a post includes reference links, it must end with a reference section:
   - `## References` for non-Chinese posts
   - `## 官方参考` for Chinese posts
-- Treat locale-specific SEO length hard caps as mandatory, not advisory. If `title` or `description` exceeds the hard cap for that language, rewrite it.
+- Treat SEO snippet length rules as mandatory:
+  - `title` must be 40-60 characters
+  - `description` must be 140-160 characters
+  - Any out-of-range value must be rewritten before delivery.
+- File naming must be strongly related to the article title intent:
+  - Use a concise kebab-case slug based on the title's core keywords.
+  - Avoid generic names like `post-1`, `update`, `new-article`.
+  - Keep language suffix explicit (for example `.zh-cn.md`, `.en.md`) and aligned with content locale.
+- For create/rewrite/refresh tasks, SEO acceptance score is a hard gate: only deliver when `seo_frontmatter.md` scorecard is `100/100`.
 - If the user asks for review, findings come first; do not silently rewrite content unless asked.
 
 ## Validation
 
 - After changing any file under `content/**`, run `hugo` or `hugo server` to validate output.
 - For posts with reference links, verify the final reference section exists and includes cited references.
-- If `title` or `description` was reviewed or edited, measure length explicitly against the locale-specific hard caps before finishing.
+- If `title` or `description` was reviewed or edited, measure length explicitly against the hard ranges (`title` 40-60, `description` 140-160) before finishing.
 - If the edited post includes explicit freshness dates, verify all in-article date markers were updated consistently in each edited language file.
 - If `title`, `headline`, `description`, canonical, hreflang, or structured data changed, inspect generated output or built HTML.
 - If review is requested, validate by citing concrete file paths and line numbers.

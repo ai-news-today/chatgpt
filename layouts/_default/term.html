@@ -1,0 +1,63 @@
+{{ define "main" }}
+  {{ $isTag := eq .Data.Singular "tag" }}
+  {{ $kindLabel := cond $isTag (i18n "taxonomy_type_tag") (i18n "taxonomy_type_category") }}
+  {{ $dateFormat := .Site.Params.dateFormat | default "2006-01-02" }}
+  {{ $pages := .Pages.ByDate.Reverse }}
+
+  <section class="mt-10">
+    <header class="mb-8 rounded-2xl border border-neutral-200 bg-gradient-to-br from-primary-50 to-white p-6 dark:border-neutral-700 dark:from-primary-900/20 dark:to-neutral-900">
+      <p class="text-xs font-semibold uppercase tracking-wide text-primary-700 dark:text-primary-300">
+        {{ $kindLabel }}
+      </p>
+      <h1 class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral">
+        {{ .Title }}
+      </h1>
+      <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
+        {{ i18n "taxonomy_term_count" (dict "count" (len $pages) "title" .Title) }}
+      </p>
+    </header>
+
+    {{ if gt (len $pages) 0 }}
+      <div class="space-y-4">
+        {{ range $pages }}
+          <article class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition hover:border-primary-400 hover:shadow-md dark:border-neutral-700 dark:bg-neutral-800">
+            <div class="flex items-center gap-2 text-xs text-neutral-500 dark:text-neutral-400">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">
+                {{ .Date.Format $dateFormat }}
+              </time>
+              {{ if .Params.categories }}
+                <span>•</span>
+                <span>{{ index .Params.categories 0 }}</span>
+              {{ end }}
+            </div>
+            <h2 class="mt-2 text-xl font-semibold text-neutral-900 dark:text-neutral">
+              <a
+                href="{{ .RelPermalink }}"
+                class="transition hover:text-primary-600 dark:hover:text-primary-400"
+              >
+                {{ .Title }}
+              </a>
+            </h2>
+            {{ if .Summary }}
+              <p class="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                {{ .Summary | plainify | truncate 160 }}
+              </p>
+            {{ end }}
+            <div class="mt-4">
+              <a
+                href="{{ .RelPermalink }}"
+                class="inline-flex items-center text-sm font-medium text-primary-700 transition hover:text-primary-800 dark:text-primary-300 dark:hover:text-primary-200"
+              >
+                {{ i18n "taxonomy_read_article" }} →
+              </a>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    {{ else }}
+      <div class="rounded-xl border border-dashed border-neutral-300 p-8 text-center text-neutral-600 dark:border-neutral-700 dark:text-neutral-400">
+        {{ i18n "taxonomy_term_empty" (dict "kind" $kindLabel) }}
+      </div>
+    {{ end }}
+  </section>
+{{ end }}

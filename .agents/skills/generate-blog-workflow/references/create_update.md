@@ -11,10 +11,17 @@ Use this reference when creating a new post, rewriting an existing one, expandin
    - Choose the correct `translationKey`.
    - Keep `locale` aligned with the folder.
    - Reuse the slug unless the user explicitly wants a different URL.
+   - Enforce filename-title alignment: filename slug must reflect the title's core topic keywords.
+   - Use kebab-case and avoid generic slugs (e.g. `post-1`, `new-article`, `update`).
+   - Keep locale suffix explicit and correct (`.zh-cn.md`, `.en.md`, etc.).
 3. Set or revise frontmatter early.
    - `title`: search-result-oriented title
    - `headline`: optional visible `h1` when wording should differ slightly from `title`
    - `description` and `summary`: concise, readable, and aligned with the actual article
+   - Enforce snippet lengths: `title` 40-60 chars, `description` 140-160 chars
+   - `featureimage` + `showHero`: set cover image metadata so Blowfish list/article views can render the cover consistently
+   - `heroStyle`: prefer `basic` unless the task explicitly needs another style
+   - `robots`: set only when index-control is needed; avoid accidental deindexing
    - `updatedDate`: every blog edit must sync `updatedDate` to today's date (`YYYY-MM-DD`)
    - If the post includes explicit freshness dates (`as of`, `last checked on`, `截至`, `最后核对日期`), sync those markers to the current verification date in every edited language file.
    - Keep `title`/`headline` semantically aligned with the same core keyword so the search promise and page promise match.
@@ -41,6 +48,9 @@ Use this reference when creating a new post, rewriting an existing one, expandin
    - Run `npm run sync:updated-date` after blog edits.
    - If explicit freshness dates exist in the post, verify those date strings were updated consistently in all edited language variants.
    - Run `npm run check:references` when the post cites references.
+   - Run the SEO 100 scorecard in `seo_frontmatter.md`; any failed item blocks delivery.
+   - Recount final `title` and `description` lengths; out-of-range values block delivery.
+   - Do not finalize output unless SEO score is `100/100`.
    - Run `npm run build` before finishing.
 8. Post-publish SEO sanity check (when Search Console is available).
    - Use URL Inspection to confirm the page is crawlable, indexable, and canonicalized as expected.

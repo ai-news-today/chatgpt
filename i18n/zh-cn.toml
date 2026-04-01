@@ -1,0 +1,29 @@
+[taxonomy_type_tag]
+other = "标签"
+
+[taxonomy_type_category]
+other = "分类"
+
+[taxonomy_browse_description]
+other = "通过{{ .kind }}快速浏览内容，按主题聚合查看更高效。"
+
+[taxonomy_featured_terms]
+other = "热门主题"
+
+[taxonomy_posts_count]
+other = "{{ .count }} 篇"
+
+[taxonomy_card_hint]
+other = "查看该{{ .kind }}下的全部文章"
+
+[taxonomy_empty]
+other = "当前还没有可展示的{{ .kind }}。"
+
+[taxonomy_term_empty]
+other = "该{{ .kind }}下暂无文章。"
+
+[taxonomy_term_count]
+other = "共 {{ .count }} 篇文章与“{{ .title }}”相关。"
+
+[taxonomy_read_article]
+other = "阅读文章"

@@ -1,0 +1,29 @@
+[taxonomy_type_tag]
+other = "Tag"
+
+[taxonomy_type_category]
+other = "Category"
+
+[taxonomy_browse_description]
+other = "Browse content by {{ .kind }} and explore related posts faster."
+
+[taxonomy_featured_terms]
+other = "Featured topics"
+
+[taxonomy_posts_count]
+other = "{{ .count }} posts"
+
+[taxonomy_card_hint]
+other = "View all posts under this {{ .kind }}."
+
+[taxonomy_empty]
+other = "No {{ .kind }} items yet."
+
+[taxonomy_term_empty]
+other = "No posts found for this {{ .kind }}."
+
+[taxonomy_term_count]
+other = "{{ .count }} post(s) related to \"{{ .title }}\"."
+
+[taxonomy_read_article]
+other = "Read article"

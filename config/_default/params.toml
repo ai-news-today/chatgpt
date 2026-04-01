@@ -1,17 +1,20 @@
-colorScheme = "blowfish"
+colorScheme = "chatgptnews-dark"
 defaultAppearance = "light"
 autoSwitchAppearance = true
 
-enableA11y = true
+enableA11y = false
 enableSearch = false
 enableCodeCopy = false
 enableStructuredBreadcrumbs = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = false
 replyByEmail = false
+mainSections = ["articles"]
 
 disableImageOptimization = false
 disableImageOptimizationMD = false
 disableTextInHeader = false
-hotlinkFeatureImage = false
+hotlinkFeatureImage = true
 
 fingerprintAlgorithm = "sha512"
 
@@ -26,18 +29,23 @@ showAppearanceSwitcher = true
 showScrollToTop = true
 
 [homepage]
-layout = "page"
-showRecent = false
+layout = "hero"
+homepageImage = "images/chatgpt-ai.jpg"
+showRecent = true
+showRecentItems = 6
+cardView = true
+cardViewScreenWidth = false
 
 [article]
 showDate = true
 showViews = false
 showLikes = false
 showDateOnlyInArticle = false
-showDateUpdated = false
+showDateUpdated = true
 showAuthor = false
-showHero = false
-showBreadcrumbs = false
+showHero = true
+heroStyle = "basic"
+showBreadcrumbs = true
 showDraftLabel = false
 showEdit = false
 editAppendPath = true
@@ -47,28 +55,28 @@ showPagination = false
 invertPagination = false
 showReadingTime = false
 showTableOfContents = true
-showTaxonomies = false
+showTaxonomies = true
 showCategoryOnly = false
 showAuthorsBadges = false
 showWordCount = false
 showZenMode = false
 
 [list]
-showHero = false
-showBreadcrumbs = false
+showHero = true
+showBreadcrumbs = true
 showSummary = true
 showViews = false
 showLikes = false
-showTableOfContents = false
-showCards = false
+showTableOfContents = true
+showCards = true
 orderByWeight = false
-groupByYear = false
-cardView = false
+groupByYear = true
+cardView = true
 cardViewScreenWidth = false
 constrainItemsWidth = true
 
 [sitemap]
-excludedKinds = ["taxonomy", "term"]
+excludedKinds = []
 
 [verification]
 # google = ""

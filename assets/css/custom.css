@@ -1,0 +1,72 @@
+/* AI-flavored background glow with layered but readable contrast */
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  background-image:
+    radial-gradient(1200px 700px at 8% -12%, rgba(37, 99, 235, 0.14), transparent 62%),
+    radial-gradient(900px 560px at 100% 0%, rgba(59, 130, 246, 0.11), transparent 58%),
+    radial-gradient(900px 500px at 50% 112%, rgba(30, 64, 175, 0.08), transparent 60%),
+    radial-gradient(600px 300px at 52% 8%, rgba(56, 189, 248, 0.08), transparent 70%),
+    linear-gradient(rgba(37, 99, 235, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.04) 1px, transparent 1px);
+  background-size: auto, auto, auto, auto, 32px 32px, 32px 32px;
+  background-attachment: fixed;
+}
+
+html.dark body {
+  background-image:
+    radial-gradient(1100px 640px at 6% -10%, rgba(59, 130, 246, 0.18), transparent 62%),
+    radial-gradient(900px 520px at 96% -2%, rgba(96, 165, 250, 0.15), transparent 58%),
+    radial-gradient(880px 520px at 50% 112%, rgba(30, 64, 175, 0.18), transparent 62%),
+    radial-gradient(640px 340px at 52% 6%, rgba(125, 211, 252, 0.1), transparent 72%),
+    linear-gradient(rgba(59, 130, 246, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+  background-size: auto, auto, auto, auto, 34px 34px, 34px 34px;
+}
+
+/* Animated top scanline to add subtle AI-console feeling */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(59, 130, 246, 0.025) 0,
+      rgba(59, 130, 246, 0.025) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+  opacity: 0.7;
+}
+
+/* Floating bokeh dots for depth; kept low-opacity for readability */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(125, 211, 252, 0.18) 0 2px, transparent 3px),
+    radial-gradient(circle at 77% 14%, rgba(96, 165, 250, 0.14) 0 2px, transparent 3px),
+    radial-gradient(circle at 24% 62%, rgba(56, 189, 248, 0.12) 0 2px, transparent 3px),
+    radial-gradient(circle at 88% 72%, rgba(59, 130, 246, 0.14) 0 2px, transparent 3px),
+    radial-gradient(circle at 58% 44%, rgba(147, 197, 253, 0.12) 0 2px, transparent 3px);
+  animation: aiFloat 26s ease-in-out infinite alternate;
+}
+
+@keyframes aiFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -16px, 0);
+  }
+}
