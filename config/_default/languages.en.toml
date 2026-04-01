@@ -1,0 +1,17 @@
+languageCode = "en"
+languageName = "English"
+weight = 2
+title = "ChatGPT News Today"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+description = "ChatGPT information and news, covering product updates, ecosystem trends, and practical insights."
+
+[params.author]
+name = "ChatGPT News Today"
+headline = "Focused on ChatGPT information and news"
+bio = "Clear, timely, and practical coverage of ChatGPT updates."
+links = [{ github = "https://github.com/ai-news-today/chatgpt" }]

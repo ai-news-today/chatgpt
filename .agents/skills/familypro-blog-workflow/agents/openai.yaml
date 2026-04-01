@@ -1,0 +1,4 @@
+interface:
+  display_name: "Familypro Blog Workflow"
+  short_description: "Create, localize, refresh, and review Familypro blog posts"
+  default_prompt: "Use $familypro-blog-workflow to create, revise, localize, or review a blog post for the familypro repo."

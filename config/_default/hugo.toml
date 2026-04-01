@@ -1,0 +1,19 @@
+defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 0
+
+[pagination]
+pagerSize = 10
+
+[imaging]
+anchor = "Center"
+
+[sitemap]
+changefreq = "daily"
+filename = "sitemap.xml"
+priority = 0.7
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]

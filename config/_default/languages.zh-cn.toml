@@ -1,0 +1,17 @@
+languageCode = "zh-cn"
+languageName = "简体中文"
+weight = 1
+title = "ChatGPT 今日资讯"
+
+[params]
+displayName = "中文"
+isoCode = "zh-cn"
+rtl = false
+dateFormat = "2006-01-02"
+description = "ChatGPT 信息与新闻，聚焦功能更新、行业动态与实用解读。"
+
+[params.author]
+name = "ChatGPT 今日资讯"
+headline = "专注 ChatGPT 信息与新闻"
+bio = "提供清晰、及时、可读的 ChatGPT 动态。"
+links = [{ github = "https://github.com/ai-news-today/chatgpt" }]
