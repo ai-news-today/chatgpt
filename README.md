@@ -168,3 +168,18 @@ hugo server
 ## 部署
 
 推送到 `main` 后，GitHub Actions 会自动构建并发布到 GitHub Pages。
+
+### GitHub Pages（GitHub Actions）操作流程
+
+1. 打开仓库页：`Settings -> Pages`
+2. 在 `Build and deployment` 里选择 `GitHub Actions`（而不是 `Deploy from a branch`）
+3. 保存并开启 Pages
+4. 等待 1-2 分钟后，再触发部署：
+   - 推送一次到 `main`，或
+   - 手动在 `Actions` 里运行本仓库的 `Deploy Hugo site to Pages`（`workflow_dispatch`）
+
+部署失败排查（常见：404 Not Found）
+
+- 如果看到类似 `Get Pages site failed / Not Found (pages#get-a-pag...`，通常是因为 Pages 站点还没在 `Settings -> Pages` 里被启用，或尚未切到 `GitHub Actions` 作为部署来源。
+- 先确认第 1-3 步已完成，再重新触发 workflow。
+- 若仍失败，可以检查 workflow 里 `actions/configure-pages@v5` 这一步是否配置了 `enablement`（有些场景需要显式开启 enablement）。
