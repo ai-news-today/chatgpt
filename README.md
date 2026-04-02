@@ -11,7 +11,7 @@
 ## 本地开发
 
 ```bash
-cd /Users/zhangjane/home_work_space/chatgpt
+cd /Users/xxx/home_work_space/chatgpt
 hugo server
 ```
 
@@ -42,8 +42,8 @@ path = "github.com/nunocoracao/blowfish/v2"
 修复：
 
 ```bash
-cd /Users/zhangjane/home_work_space/chatgpt
-hugo server --source "/Users/zhangjane/home_work_space/chatgpt"
+cd /Users/xxx/home_work_space/chatgpt
+hugo server --source "/Users/xxx/home_work_space/chatgpt"
 ```
 
 ### 4) Go 版本过低导致模块/工具失败
@@ -59,7 +59,7 @@ go version
 ## 推荐启动顺序（首次）
 
 ```bash
-cd /Users/zhangjane/home_work_space/chatgpt
+cd /Users/xxx/home_work_space/chatgpt
 go version
 hugo version
 hugo mod graph
@@ -152,7 +152,7 @@ mainSections = ["articles"]
 ### 5) 本地验证清单
 
 ```bash
-cd /Users/zhangjane/home_work_space/chatgpt
+cd /Users/xxx/home_work_space/chatgpt
 hugo mod graph
 hugo
 hugo server
