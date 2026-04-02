@@ -1,39 +1,52 @@
 ---
 title: "Model Releases"
 description: "A timeline of key model launches and major capability breakthroughs across OpenAI products."
+date: 2026-04-01
+lastmod: 2026-04-02
+updatedDate: 2026-04-02
+summary: "Mar 2026: OpenAI API released GPT-5.4 / GPT-5.4 pro and shipped GPT-5.4 mini / nano"
 ---
 
 ## 2026
 
-| **Date**    | **Model/Product**         | **Core Features and Breakthroughs**                                                                                    |
-| ----------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **2026.01** | **GPT-5.2-Codex**         | **Autonomous coding agent** that understands entire codebases and executes multi-step engineering tasks independently. |
-| **2026.02** | **GPT-5.3-Codex-Spark**   | Real-time generation model with ultra-fast coding feedback and millisecond-level latency.                              |
-| **2026.03** | **GPT-5.4 / 5.4-mini**    | **Introduced "computer use"** for direct cross-app automation on a user's local machine.                               |
-| **2026.03** | **Sora 2.0 (API Update)** | Added 1080p output, persistent character consistency, and continuous video generation up to 20 seconds.                |
+| **Date**       | **Model/Product**               | **Core features and breakthroughs (source: OpenAI API Changelog)**                                                                                                                                                     |
+| -------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2026-02-24** | **gpt-5.3-codex**               | Released `gpt-5.3-codex` on the Responses API.                                                                                                                                                                         |
+| **2026-03-03** | **gpt-5.3-chat-latest**         | Released `gpt-5.3-chat-latest` (Chat Completions + Responses API), pointing to the latest GPT‑5.3 Instant snapshot used in ChatGPT.                                                                                    |
+| **2026-03-05** | **gpt-5.4 / gpt-5.4-pro**       | Released `gpt-5.4` (Chat Completions + Responses) and `gpt-5.4-pro` (Responses). Also shipped tool search, built-in computer use, a 1M-token context window, and native compaction for longer-running agent workflows. |
+| **2026-03-17** | **gpt-5.4-mini / gpt-5.4-nano** | Released `gpt-5.4-mini` and `gpt-5.4-nano` (Chat Completions + Responses): mini supports tool search, built-in computer use, and compaction; nano supports compaction but not tool search or computer use.             |
+
+| **Date**               | **Model/Product**              | **Core features and breakthroughs (source: ChatGPT Release Notes)**                                                                                                                     |
+| ---------------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Mar 2026 (rollout)** | **GPT-5.4 Thinking (ChatGPT)** | ChatGPT rollout of GPT‑5.4 Thinking (ChatGPT-side naming), positioned for reasoning/coding/agentic work. Note: ChatGPT naming and rollout timing may not exactly match API model slugs. |
+| **Mar 2026 (rollout)** | **GPT-5.4 mini (ChatGPT)**     | ChatGPT rollout; used as a fallback model in some plans/scenarios when GPT‑5.4 Thinking hits rate limits.                                                                               |
 
 ## 2025
 
-| **Date**    | **Model/Product**           | **Core Features and Breakthroughs**                                                                                       |
-| ----------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **2025.01** | **o3-mini**                 | Cost-efficient reasoning model that outperforms o1-mini on STEM tasks while running faster.                               |
-| **2025.02** | **GPT-4.5 (Orion)**         | Pretrained model focused on emotional intelligence and aesthetics, with stronger creative writing and intuitive judgment. |
-| **2025.08** | **GPT-5.0 (Flagship)**      | **All-around flagship** that unifies o-series reasoning depth with 4o-class speed and longer context memory.              |
-| **2025.12** | **GPT-5.2 / GPT-Image-1.5** | New-generation image engine with more precise local editing and up to 4x faster generation.                               |
+| **Date**       | **Model/Product**              | **Core features and breakthroughs**                                                                 |
+| -------------- | ------------------------------ | --------------------------------------------------------------------------------------------------- |
+| **2025-01-31** | **o3-mini**                    | Cost-efficient reasoning model optimized for coding/math/science; supports developer-style tooling. |
+| **2025-02-27** | **GPT-4.5 (research preview)** | More natural chat and stronger instruction-following; lower hallucinations.                         |
+| **2025-04-16** | **OpenAI o3 / o4-mini**        | Reasoning models update: o3 for strongest reasoning; o4-mini for higher efficiency and limits.      |
+| **2025-05-14** | **GPT-4.1 / GPT-4.1 mini**     | Coding-focused models shipped to ChatGPT; 4.1 mini replaces 4o mini in ChatGPT.                     |
+| **2025-06-10** | **OpenAI o3-pro**              | Longer-thinking variant for higher reliability; available in ChatGPT (Pro) and via API.             |
+| **2025-08-07** | **GPT-5**                      | New flagship model rollout in ChatGPT; paid tiers can choose GPT-5 or GPT-5 Thinking (and Pro).     |
+| **2025-11-12** | **GPT-5.1**                    | GPT-5 updated to 5.1 Instant/Thinking, plus stronger style/personalization controls.                |
+| **2025-12-11** | **GPT-5.2**                    | GPT-5.2 (Instant/Thinking/Pro) release; knowledge cutoff updated (noted as Aug 2025).               |
 
 ## 2024
 
-| **Date**    | **Model/Product**        | **Core Features and Breakthroughs**                                                                                                      |
-| ----------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **2024.02** | **Sora (First Reveal)**  | Text-to-video model capable of generating up to 60-second HD video with realistic world simulation.                                      |
-| **2024.05** | **GPT-4o (Omni)**        | **Native multimodality** enabling real-time, seamless interaction across text, audio, and images with very low latency.                  |
-| **2024.09** | **o1-preview / o1-mini** | **Beginning of reasoning models**, using reinforcement learning and chain-of-thought-style processing for complex math and coding tasks. |
-| **2024.12** | **ChatGPT Search**       | SearchGPT was integrated into ChatGPT with live web access and cited sources, directly challenging Google.                               |
+| **Date**       | **Model/Product**        | **Core Features and Breakthroughs**                                           |
+| -------------- | ------------------------ | ----------------------------------------------------------------------------- |
+| **2024-02-15** | **Sora (first reveal)**  | Text-to-video model announcement; positioned for up to ~60s video generation. |
+| **2024-05-13** | **GPT-4o (Omni)**        | Native multimodality flagship with low-latency real-time interaction.         |
+| **2024-07-18** | **GPT-4o mini**          | Smaller, more cost-efficient model option.                                    |
+| **2024-09-12** | **o1-preview / o1-mini** | Start of the o1 reasoning series for harder math/coding/science tasks.        |
 
 ## 2023
 
-| **Date**    | **Model/Product**     | **Core Features and Breakthroughs**                                                                      |
-| ----------- | --------------------- | -------------------------------------------------------------------------------------------------------- |
-| **2022.11** | **ChatGPT (GPT-3.5)** | Marked the start of the AI chat era with fluent text generation and baseline logical understanding.      |
-| **2023.03** | **GPT-4**             | Major leap in reasoning performance and first support for image understanding (early multimodal step).   |
-| **2023.11** | **GPT-4 Turbo**       | Knowledge cutoff updated to 2023.04, context window expanded to 128k, and pricing significantly reduced. |
+| **Date**       | **Model/Product**     | **Core Features and Breakthroughs**                               |
+| -------------- | --------------------- | ----------------------------------------------------------------- |
+| **2022-11-30** | **ChatGPT (GPT-3.5)** | Public research preview release.                                  |
+| **2023-03-14** | **GPT-4**             | Release; introduced image inputs (text outputs).                  |
+| **2023-11-06** | **GPT-4 Turbo**       | DevDay release; larger context window and newer knowledge cutoff. |
