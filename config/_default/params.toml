@@ -83,5 +83,18 @@ constrainItemsWidth = true
 excludedKinds = []
 
 [verification]
-# google = ""
+# Google Search Console: HTML tag verification
+# Paste the `content="..."` value from:
+# Search Console → Ownership verification → HTML tag
+google = "sOrSBsOdh0u-9CdUbB0lvGPu2b2fY5I6_s_nDiZPP3g"
+
+# Optional site verifications
 # bing = ""
+# pinterest = ""
+# yandex = ""
+# fediverse = ""
+
+[analytics]
+  [analytics.ga4]
+  # Google Analytics 4 Measurement ID, e.g. "G-XXXXXXXXXX"
+  id = "G-NNJVBMWTL0"
