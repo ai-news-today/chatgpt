@@ -2,6 +2,9 @@ colorScheme = "chatgptnews-dark"
 defaultAppearance = "light"
 autoSwitchAppearance = true
 
+defaultSocialImage = "images/og-default.webp"
+
+
 enableA11y = false
 enableSearch = false
 enableCodeCopy = false
@@ -60,6 +63,7 @@ showCategoryOnly = false
 showAuthorsBadges = false
 showWordCount = false
 showZenMode = false
+sharingLinks = ["reddit", "twitter", "linkedin", "email"]
 
 [list]
 showHero = true

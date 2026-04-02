@@ -70,3 +70,35 @@ body::after {
     transform: translate3d(0, -16px, 0);
   }
 }
+
+.cta-center {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.cta-pill {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  transition: transform 0.08s, box-shadow 0.2s, opacity 0.2s;
+  transform: translateY(0);
+}
+
+.cta-pill--familypro {
+  background: rgb(239, 68, 68);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);
+}
+
+.cta-pill--familypro:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.45);
+}
+
+.cta-pill--familypro:active {
+  transform: translateY(0);
+  opacity: 0.92;
+}
