@@ -92,8 +92,3 @@ Conversational **image generation and editing** pays off when it stays in the sa
 A lightweight commitment that works in practice: **several times a week**, route at least one real task through **Deep Research**, a **Project**, **Study Mode**, **Codex**, or **images**—something that would clearly slow you down without the paid stack. Maintain a small set of long‑running projects and revisit Custom Instructions and Memory as your work changes.
 
 Users who adopt that pattern often report the same shift: the subscription stops feeling like “a faster free chat,” and starts feeling like **time saved and context preserved**.
-
-## References
-
-- [OpenAI ChatGPT Help Center](https://help.openai.com/)
-- [OpenAI ChatGPT pricing](https://openai.com/pricing/)
