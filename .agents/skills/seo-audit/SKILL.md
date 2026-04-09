@@ -2,7 +2,7 @@
 name: seo-audit
 description: When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," "SEO health check," "my traffic dropped," "lost rankings," "not showing up in Google," "site isn't ranking," "Google update hit me," "page speed," "core web vitals," "crawl errors," or "indexing issues." Use this even if the user just says something vague like "my SEO is bad" or "help with SEO" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema-markup. For AI search optimization, see ai-seo.
 metadata:
-  version: 1.1.0
+  version: 1.4.0
 ---
 
 # SEO Audit
@@ -52,8 +52,49 @@ Reporting "no schema found" based solely on `web_fetch` or `curl` leads to false
 1. **Crawlability & Indexation** (can Google find and index it?)
 2. **Technical Foundations** (is the site fast and functional?)
 3. **On-Page Optimization** (is content optimized?)
-4. **Content Quality** (does it deserve to rank?)
+4. **Content Quality & Information Gain** (does it deserve to rank and add net-new value?)
 5. **Authority & Links** (does it have credibility?)
+
+---
+
+## 2026 Ranking Focus (Mandatory)
+
+In 2026, multiple algorithm updates place stronger weight on **information gain**, **effective information density**, and **answer-first UX structure**. Include these checks in every audit.
+
+### Information Gain (Net-New Value)
+
+Check whether a page contributes meaningful information that is not just reworded consensus content:
+
+- First-hand tests, measurements, or experiments
+- Original case studies and outcomes
+- Contrarian but evidence-backed viewpoints
+- Practical details competitors omit
+- Clear synthesis that creates new decision value for readers
+
+If content is accurate but fully generic, classify as **Low Information Gain**.
+
+### Low-Density Content Alert (Unhelpful Content Risk)
+
+Flag pages with high word count but low useful signal:
+
+- Repetitive paragraphs with minimal new facts
+- Generic AI-like filler with no concrete evidence
+- Long introductions delaying answers
+- Template-like sections repeated across many URLs
+- Claims without data, source, or real examples
+
+Treat this as a content quality issue even when keyword usage appears “optimized.”
+
+### UX Density & Answer-First Structure
+
+Evaluate how quickly users can extract value:
+
+- **Visual density**: avoid large unbroken text blocks; prefer scannable formatting
+- **Answer density above the fold**: key answer appears early (intro/first screen)
+- **Progressive depth**: summary first, then details, examples, caveats
+- **Fast retrieval structure**: headings, bullets, tables, jump links when appropriate
+
+Pages that hide answers deep in the body should be marked as **UX density risk**.
 
 ---
 
@@ -293,12 +334,41 @@ Reporting "no schema found" based solely on `web_fetch` or `curl` leads to false
 - Better than top-ranking competitors
 - Updated and current
 
+### Information Gain Scoring (2026)
+
+Rate each key page on a 0-3 scale:
+
+- **0 = No gain**: paraphrases common SERP content only
+- **1 = Minor gain**: small unique additions, limited decision value
+- **2 = Clear gain**: meaningful unique data, examples, or framework
+- **3 = Strong gain**: first-hand evidence and insights unavailable elsewhere
+
+Prioritize pages scoring 0-1 for rewrite or consolidation.
+
+### Effective Information Density
+
+Assess useful signal per section, not just total length:
+
+- Remove filler, repeated definitions, and “scene setting” that delays answers
+- Convert verbose sections into concise, high-signal blocks
+- Keep one idea per paragraph where possible
+- Add concrete proof (numbers, screenshots, methodology, outcomes)
+
+If a page is long and generic, classify as **high unhelpful-content risk**.
+
 ### User Engagement Signals
 
 - Time on page
 - Bounce rate in context
 - Pages per session
 - Return visits
+
+### Measurement and iteration (repo tools)
+
+- **`article_seo_eval.py`** (see `.agents/skills/scripts/ARTICLE_SEO_EVAL.md`): run against the article `.md` for **quantitative proxies** (headings, intro length, list share, paragraph length, token diversity, link count) and optional **regression vs a saved baseline**. Use this loop to ensure rewrites do not silently destroy structure or readability while lowering AI-like surface.
+- **`seo_skill_threshold_check.py`** (see `.agents/skills/scripts/SEO_SKILL_THRESHOLD_CHECK.md`): run against **`.agents/skills/seo-audit/SKILL.md`** to verify this audit skill still contains required 2026 sections and report fields. It does **not** estimate AI probability for blog posts—do **not** use it as an “AI %” checker on articles.
+
+**Suggested loop**: edit for Human AI Text + heuristics above → optional external AI-likeness check → `article_seo_eval.py` (compare to baseline) → repeat until voice and metrics stabilize → if you changed this `SKILL.md`, run `seo_skill_threshold_check.py` and fix any FAIL.
 
 ---
 
@@ -357,6 +427,12 @@ Same format as above
 **Content Findings**
 Same format as above
 
+For each important URL, also include:
+- **Information Gain Score (0-3)**
+- **Density Risk**: Low / Medium / High
+- **Above-the-Fold Answer Check**: Pass / Fail
+- **Rewrite Direction**: Keep / Rewrite / Merge / Prune
+
 **Prioritized Action Plan**
 1. Critical fixes (blocking indexation/ranking)
 2. High-impact improvements
@@ -368,6 +444,7 @@ Same format as above
 ## References
 
 - [AI Writing Detection](references/ai-writing-detection.md): Common AI writing patterns to avoid (em dashes, overused phrases, filler words)
+- **Blog body copy voice**: see [blog-seo-content-create](../blog-seo-content-create/SKILL.md); Chinese AIGC reduction: [humanize-chinese](../humanize-chinese/SKILL.md)
 - For AI search optimization (AEO, GEO, LLMO, AI Overviews), see the **ai-seo** skill
 
 ---
@@ -405,6 +482,7 @@ Same format as above
 ## Related Skills
 
 - **ai-seo**: For optimizing content for AI search engines (AEO, GEO, LLMO)
+- **humanize-chinese**: For reducing AI-like patterns in Chinese blog/body copy (coordinates with Human AI Text checks)
 - **programmatic-seo**: For building SEO pages at scale
 - **site-architecture**: For page hierarchy, navigation design, and URL structure
 - **schema-markup**: For implementing structured data

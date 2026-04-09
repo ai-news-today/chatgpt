@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "description": "文章生成后评估的默认阈值与回归对比容忍度；可按站点体裁在副本中覆盖。",
+  "thresholds": {
+    "heading_count_min": {
+      "min": 3,
+      "severity": "fail",
+      "hint": "正文建议至少 3 个章节标题（##），便于扫描与信息分块。"
+    },
+    "intro_word_count_min": {
+      "min": 60,
+      "severity": "warn",
+      "hint": "首段（第一个 ## 之前）应有足够铺垫或直接结论，避免空泛开场过短。"
+    },
+    "list_line_ratio_min": {
+      "min": 0.04,
+      "severity": "warn",
+      "hint": "适当使用列表可提升可读性与「视觉密度」；过低可能大段文字偏多。"
+    },
+    "max_paragraph_words_soft": {
+      "max": 180,
+      "severity": "warn",
+      "hint": "单段英文词数过长时，可考虑拆段或加小标题。"
+    },
+    "long_paragraph_count_max": {
+      "max": 8,
+      "severity": "warn",
+      "hint": "超过词数阈值的「长段」数量过多时，整体可读性风险上升。"
+    },
+    "long_paragraph_word_threshold": {
+      "value": 120,
+      "severity": "info",
+      "hint": "用于统计 long_paragraph_count 的单段词数下限（英文词；中文为字）。"
+    },
+    "eval_signal_weighted_min": {
+      "min": 0.0,
+      "severity": "warn",
+      "hint": "评估型信号（%、分制、小比率等）为 0 时仅提示；若体裁要求可写数据，可把 min 提到 1.0+。"
+    },
+    "unique_token_ratio_min": {
+      "min": 0.22,
+      "severity": "warn",
+      "hint": "词面唯一比例过低可能暗示重复措辞（需结合篇幅判断）。"
+    },
+    "link_count_min": {
+      "min": 1,
+      "severity": "warn",
+      "hint": "至少一个 Markdown 链接可增强可溯源与站内关联（无链接时警告）。"
+    }
+  },
+  "regression": {
+    "relative_warn": 0.12,
+    "relative_fail": 0.28,
+    "comment": "与基线对比：当前值相对基线下降超过 relative_fail 视为回归失败；超过 relative_warn 为警告。对越小越好的指标（如 long_paragraph_count）在脚本中单独处理。"
+  },
+  "metrics_in_baseline": [
+    "structure_parser",
+    "heading_count",
+    "intro_word_count",
+    "list_line_ratio",
+    "max_paragraph_words",
+    "long_paragraph_count",
+    "eval_signal_weighted_total",
+    "unique_token_ratio",
+    "token_count",
+    "link_count",
+    "avg_paragraph_words"
+  ]
+}

@@ -1,0 +1,8 @@
+# Optional; used by:
+#   - seo_skill_threshold_check.py (SKILL.md AST headings + zh tokens)
+#   - article_seo_eval.py (article headings + zh tokens)
+# Install (prefer a venv): python3 -m pip install -r requirements-seo-check.txt
+markdown-it-py>=3.0,<4
+
+# Chinese word segmentation (article + skill token metrics).
+jieba>=0.42.1

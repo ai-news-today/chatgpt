@@ -1,0 +1,6 @@
+{
+  "comment": "TD = title + meta description（Hugo frontmatter）。长度为 Unicode 码点数量（len），与 seo_frontmatter.md 一致。",
+  "title": { "min": 40, "max": 60 },
+  "description": { "min": 140, "max": 160 },
+  "locale_overrides": {}
+}

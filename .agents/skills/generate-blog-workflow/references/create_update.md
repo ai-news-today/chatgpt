@@ -32,7 +32,6 @@ Use this reference when creating a new post, rewriting an existing one, expandin
 5. Write or rewrite freely.
    - Preserve facts and user intent.
    - Improve flow, transitions, and section boundaries when the original structure is weak.
-   - Remove fluff, repeated summaries, and generic “AI-sounding” filler.
    - Apply `language-clarity.md` for sentence-level fluency and ambiguity checks in the target language.
 6. If the article contains commands, links, pricing, versions, or operational steps, verify them.
    - Google-facing baseline: write for an intended audience first, not for search-engine-first filler.
@@ -65,9 +64,8 @@ Use this reference when creating a new post, rewriting an existing one, expandin
 
 ## Output quality bar
 
-- The article should read like a deliberate post by a human operator or developer.
-- Output should read naturally to native readers of the target language: smooth phrasing, clear referents, and low ambiguity.
-- Commands should be copyable.
-- The intro should tell the reader what problem the post solves and who it is for.
-- The conclusion should close the loop instead of restating the entire article.
-- Avoid "SEO-only" padding text, synthetic FAQs, or topic stuffing that does not help the target reader complete a task.
+- Commands should be copyable and verified.
+- The intro tells the reader what problem the post solves and who it is for.
+- The conclusion closes the loop; it does not restate the entire article.
+- Avoid padding text or topic stuffing that does not help the target reader complete a task.
+- Writing voice and structure: see [blog-seo-content-create](../../blog-seo-content-create/SKILL.md).
