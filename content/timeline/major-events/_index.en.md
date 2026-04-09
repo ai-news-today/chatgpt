@@ -1,9 +1,9 @@
 ---
-title: "Major Events"
-description: "High-impact events with broad ecosystem relevance."
+title: "ChatGPT Major Events Timeline: Industry Milestones by Date"
+description: "Track high-impact ChatGPT and OpenAI events beyond routine releases, including strategy, governance, legal, and ecosystem shifts, with verified sources."
 date: 2026-04-01
-lastmod: 2026-04-02
-updatedDate: 2026-04-02
+lastmod: 2026-04-09
+updatedDate: 2026-04-09
 summary: "OpenAI announced the retirement of GPT‑4o, GPT‑4.1, and GPT‑4.1 mini in ChatGPT"
 ---
 

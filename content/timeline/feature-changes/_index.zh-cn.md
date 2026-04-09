@@ -1,9 +1,9 @@
 ---
-title: "功能变更"
-description: "跟踪 ChatGPT 产品功能层面的更新与调整。"
+title: "ChatGPT 功能变更时间线：产品更新、交互调整与能力演进按年份追踪与影响解析"
+description: "该页面持续追踪 ChatGPT 的功能上线与产品调整，覆盖交互体验、第三方集成、工具能力和工作流变化，并基于官方可核验来源整理关键信息，帮助你评估上线节奏、可用范围、使用影响、启用时机与迁移风险，并快速建立版本迭代认知框架，同时降低团队沟通与迁移试错成本，并支持制定上线节奏与培训计划。"
 date: 2026-04-01
-lastmod: 2026-04-02
-updatedDate: 2026-04-02
+lastmod: 2026-04-09
+updatedDate: 2026-04-09
 summary: "Enterprise/Edu 更新 Box、Notion、Linear、Dropbox apps：新增 app actions、以及写入能力（默认关闭需 admin 启用/授权）"
 ---
 

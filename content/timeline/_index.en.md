@@ -1,6 +1,7 @@
 ---
-title: "Timeline"
-description: "Track key ChatGPT developments by category."
+title: "ChatGPT Timeline Hub: Releases, Features, and Major Events"
+description: "Explore a source-backed ChatGPT timeline of model releases, feature changes, and major events, organized by date to show what changed, when, and why it matters."
+updatedDate: 2026-04-09
 ---
 
 The timeline is organized into three streams:

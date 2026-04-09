@@ -1,9 +1,9 @@
 ---
-title: "Feature Changes"
-description: "Track ChatGPT product-level feature updates and adjustments."
+title: "ChatGPT Feature Changes Timeline: Product Updates by Date"
+description: "Follow ChatGPT feature rollouts across interface, integrations, tools, and workflows, with verified references to assess timing, user impact, migration risk."
 date: 2026-04-01
-lastmod: 2026-04-02
-updatedDate: 2026-04-02
+lastmod: 2026-04-09
+updatedDate: 2026-04-09
 summary: "Updated Box/Notion/Linear/Dropbox apps in Enterprise/Edu with new app actions and write capabilities (disabled by default; admin-managed)"
 ---
 

@@ -1,9 +1,9 @@
 ---
-title: "Model Releases"
-description: "A timeline of key model launches and major capability breakthroughs across OpenAI products."
+title: "ChatGPT Model Releases Timeline: Versions and Milestones"
+description: "Review ChatGPT and OpenAI model releases by date, covering version transitions, reasoning upgrades, milestones, and deployment notes with verified context."
 date: 2026-04-01
-lastmod: 2026-04-02
-updatedDate: 2026-04-02
+lastmod: 2026-04-09
+updatedDate: 2026-04-09
 summary: "Mar 2026: OpenAI API released GPT-5.4 / GPT-5.4 pro and shipped GPT-5.4 mini / nano"
 ---
 
