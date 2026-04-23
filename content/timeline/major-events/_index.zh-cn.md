@@ -2,9 +2,9 @@
 title: "ChatGPT 大事件时间线：高影响节点、治理转折与监管进展按年份追踪与影响解析"
 description: "该页面聚焦 ChatGPT 与 OpenAI 的高影响事件，不仅记录产品与战略关键节点，也跟踪治理调整、监管进展和生态格局变化，并基于可核验来源补充背景与后果，帮助你从长期视角理解事件对用户、开发者和行业竞争的连锁影响及潜在决策意义，并提升跨周期风险识别能力，并支持制定合规与产品响应策略。"
 date: 2026-04-01
-lastmod: 2026-04-09
-updatedDate: 2026-04-09
-summary: "OpenAI 宣布在 ChatGPT 中退役 GPT‑4o、GPT‑4.1、GPT‑4.1 mini"
+lastmod: 2026-04-23
+updatedDate: 2026-04-23
+summary: "2026 年 4 月新增：社区披露 ChatGPT 订阅绑定与收据复用滥用争议（待核验）"
 ---
 
 这里用于记录具有阶段性影响的重要节点与背景说明（产品发布与功能小更新不在此页重复展开：请分别参见 [模型发布]({{< relref "timeline/model-releases" >}}) 与 [功能变更]({{< relref "timeline/feature-changes" >}})）。
@@ -22,11 +22,12 @@ summary: "OpenAI 宣布在 ChatGPT 中退役 GPT‑4o、GPT‑4.1、GPT‑4.1 mi
 
 ## 2026
 
-| **时间**   | **事件类型**  | **主要事件**                                                                                                                                                                                                                     | **来源**                                                                                                                                                                                |
-| ---------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-02-13 | 模型/策略调整 | OpenAI 宣布在 ChatGPT 中退役 GPT‑4o、GPT‑4.1、GPT‑4.1 mini 与 o4‑mini 等旧模型（仅影响 ChatGPT，不等同于 API 下线），并强调用更新的 GPT‑5 系列与更强的自定义/安全能力承接。此类“强制迁移”会直接影响用户习惯与第三方教程/工作流。 | [Retiring GPT-4o and older models（OpenAI）](https://openai.com/index/retiring-gpt-4o-and-older-models)                                                                                 |
-| 2026-03    | 版权/诉讼     | 版权与数据合规诉讼持续发酵，部分案件进入更实质的举证/披露阶段，可能影响训练数据治理与产品合规策略。                                                                                                                              | [Encyclopedia Britannica sues OpenAI（Reuters）](https://www.reuters.com/legal/litigation/encyclopedia-britannica-sues-openai-over-ai-training-2026-03-16/)                             |
-| 2026-03    | 欧盟/隐私监管 | 欧洲隐私监管与司法程序持续推进，相关裁决可能影响产品在欧盟的运营与合规投入。                                                                                                                                                     | [Italian court scraps privacy watchdog fine（Reuters）](https://www.reuters.com/technology/italian-court-scraps-15-million-euro-privacy-watchdog-fine-chatgpt-maker-openai-2026-03-19/) |
+| **时间**   | **事件类型**  | **主要事件**                                                                                                                                                                                                                     | **来源**                                                                                                                                                                                                                                                                                                                                                                                         |
+| ---------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2026-04    | 订阅安全争议  | `（待核验）` OpenAI 社区出现关于 ChatGPT 订阅流程被“收据复用 / token 跨账号使用”滥用的技术帖，讨论焦点集中在“后端用户绑定与二次校验是否充分”。截至目前缺少 OpenAI 官方公告对影响范围与根因的完整确认。                           | [OpenAI 社区：Google trial 被滥用讨论](https://community.openai.com/t/eligibility-for-the-chatgpt-google-trial-continues-to-be-illegally-exploited-and-monetized-by-countless-individuals/1379386)；[OpenAI 社区：Apple receipt 绑定报告](https://community.openai.com/t/security-report-apple-pay-receipt-validation-does-not-bind-to-purchaser-apple-id-potential-subscription-bypass/1379167) |
+| 2026-03    | 版权/诉讼     | 版权与数据合规诉讼持续发酵，部分案件进入更实质的举证/披露阶段，可能影响训练数据治理与产品合规策略。                                                                                                                              | [Encyclopedia Britannica sues OpenAI（Reuters）](https://www.reuters.com/legal/litigation/encyclopedia-britannica-sues-openai-over-ai-training-2026-03-16/)                                                                                                                                                                                                                                      |
+| 2026-03    | 欧盟/隐私监管 | 欧洲隐私监管与司法程序持续推进，相关裁决可能影响产品在欧盟的运营与合规投入。                                                                                                                                                     | [Italian court scraps privacy watchdog fine（Reuters）](https://www.reuters.com/technology/italian-court-scraps-15-million-euro-privacy-watchdog-fine-chatgpt-maker-openai-2026-03-19/)                                                                                                                                                                                                          |
+| 2026-02-13 | 模型/策略调整 | OpenAI 宣布在 ChatGPT 中退役 GPT‑4o、GPT‑4.1、GPT‑4.1 mini 与 o4‑mini 等旧模型（仅影响 ChatGPT，不等同于 API 下线），并强调用更新的 GPT‑5 系列与更强的自定义/安全能力承接。此类“强制迁移”会直接影响用户习惯与第三方教程/工作流。 | [Retiring GPT-4o and older models（OpenAI）](https://openai.com/index/retiring-gpt-4o-and-older-models)                                                                                                                                                                                                                                                                                          |
 
 ## 2025
 
@@ -39,18 +40,18 @@ summary: "OpenAI 宣布在 ChatGPT 中退役 GPT‑4o、GPT‑4.1、GPT‑4.1 mi
 
 | **时间**        | **事件类型**  | **主要事件**                                                                                | **来源**                                                                                        |
 | --------------- | ------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| 2024-01-10      | 生态/分发     | GPT Store 上线，推动“可分发的对话式应用”生态；也改变了创作者激励与内容审核压力。            | [ChatGPT — 发布说明](https://help.openai.com/zh-hans-cn/articles/6825453-chatgpt-release-notes) |
-| 2024-05-13      | 模型/产品范式 | GPT-4o（Omni）发布，主打更低延迟的原生多模态交互，进一步将“语音/视觉”带入主流对话场景。     | [Hello GPT‑4o](https://openai.com/blog/hello-gpt-4o)                                            |
 | 2024-09（以来） | 推理范式      | 推理系列模型（如 o1-preview / o1-mini）进入产品视野，推动“更长思考时间换可靠性”的交互预期。 | 见站内[模型发布]({{< relref "timeline/model-releases" >}})（来源：OpenAI 官方公告/研究页）      |
+| 2024-05-13      | 模型/产品范式 | GPT-4o（Omni）发布，主打更低延迟的原生多模态交互，进一步将“语音/视觉”带入主流对话场景。     | [Hello GPT‑4o](https://openai.com/blog/hello-gpt-4o)                                            |
+| 2024-01-10      | 生态/分发     | GPT Store 上线，推动“可分发的对话式应用”生态；也改变了创作者激励与内容审核压力。            | [ChatGPT — 发布说明](https://help.openai.com/zh-hans-cn/articles/6825453-chatgpt-release-notes) |
 
 ## 2023
 
 | **时间**           | **事件类型**    | **主要事件**                                                                                                                                 | **来源**                                                                                                                                                                                    |
 | ------------------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2023-02-01（报道） | 用户增长        | UBS 引述 Similarweb 等数据估算：ChatGPT 在 2023 年 1 月末达到约 1 亿月活用户，被媒体广泛报道为增长极快的消费级应用。                         | [ChatGPT sets record for fastest-growing user base（Reuters）](http://reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01)                         |
+| 2023-11-17～11-22  | 领导层危机      | Sam Altman 被董事会解除职务、临时 CEO 更替、员工与投资方施压后回归并推动董事会重组；此事件显著影响外界对 OpenAI 治理结构与商业化路径的判断。 | [Removal of Sam Altman from OpenAI（Wikipedia）](https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI)                                                                           |
 | 2023-03-31         | 监管争议        | 意大利数据保护机构（Garante）对 ChatGPT 展开调查并采取临时措施（涉及 GDPR 合规与未成年人保护等），引发全球范围对生成式 AI 合规的讨论。       | [Italy curbs ChatGPT, starts probe（Reuters）](https://www.reuters.com/technology/italy-data-protection-agency-opens-chatgpt-probe-privacy-concerns-2023-03-31)                             |
 | 2023-03-20         | 稳定性/隐私事件 | ChatGPT 出现重大宕机与数据暴露风险；OpenAI 发布复盘说明根因（redis-py bug）并披露受影响范围。                                                | [March 20 ChatGPT outage: Here’s what happened（OpenAI）](https://openai.com/blog/march-20-chatgpt-outage/) + [Incident（OpenAI Status）](https://status.openai.com/incidents/jq9232rcmktd) |
-| 2023-11-17～11-22  | 领导层危机      | Sam Altman 被董事会解除职务、临时 CEO 更替、员工与投资方施压后回归并推动董事会重组；此事件显著影响外界对 OpenAI 治理结构与商业化路径的判断。 | [Removal of Sam Altman from OpenAI（Wikipedia）](https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI)                                                                           |
+| 2023-02-01（报道） | 用户增长        | UBS 引述 Similarweb 等数据估算：ChatGPT 在 2023 年 1 月末达到约 1 亿月活用户，被媒体广泛报道为增长极快的消费级应用。                         | [ChatGPT sets record for fastest-growing user base（Reuters）](http://reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01)                         |
 
 ## 2022
 

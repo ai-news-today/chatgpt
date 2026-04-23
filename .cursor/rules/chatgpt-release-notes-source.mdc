@@ -1,0 +1,32 @@
+---
+description: "Use ChatGPT release notes as the primary source for latest timeline updates."
+globs: content/timeline/**/_index.*.md
+alwaysApply: false
+---
+
+# ChatGPT Latest Info Source Rule
+
+适用于 `content/timeline/**/_index.*.md` 的时间线维护，尤其是“最新信息”补充场景。
+
+## 数据源优先级（必须）
+
+- 涉及 ChatGPT 功能更新时，优先使用并先核验此链接：
+  - `https://help.openai.com/en/articles/6825453-chatgpt-release-notes`
+- 若同一事件在多个页面出现，先以该发布说明的日期与描述为基准，再补充其他官方来源。
+
+## 录入规范（必须）
+
+- 新条目按时间倒序插入到对应年份顶部，不能追加到末尾。
+- 中英文页面需同步更新，事件粒度与顺序保持一致。
+- 页面开头需统一声明默认来源为 `https://help.openai.com/en/articles/6825453-chatgpt-release-notes`。
+- 条目说明用“功能变化 + 可用范围/影响”的结构；与默认来源一致时无需每条重复写来源链接。
+- 若条目来源不是默认来源，必须在该条目中单独标注具体来源链接。
+- 无法核验精确日期时，必须明确标注不确定性，避免写成确定事实。
+
+## 自检清单
+
+- 是否已核验 release notes 原文？
+- 是否已同步中英文对应时间线？
+- 是否保持倒序并放入正确年份？
+- 默认来源是否已写在页面开头？
+- 非默认来源条目是否逐条标注了可追溯链接？

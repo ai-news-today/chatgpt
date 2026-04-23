@@ -1,0 +1,27 @@
+---
+description: "Enforce reverse-chronological ordering for timeline pages."
+globs: content/timeline/**/_index.*.md
+alwaysApply: false
+---
+
+# Timeline Ordering Standard
+
+适用于 `content/timeline/**/_index.*.md` 的时间线编辑。
+
+## 排序规则（必须）
+
+- 年份分组按倒序：最新年份在最上方（如 2026 -> 2025 -> 2024）。
+- 每个年份内条目按时间倒序：最新日期在最上方。
+- 中英文对应页面保持同一排序结构，不允许一边倒序一边乱序。
+
+## 编辑约束（必须）
+
+- 仅调整顺序时，不改动既有事实描述、来源链接与措辞。
+- 若发现条目跨年（如 2022 条目写在 2023 分组），应移动到正确年份分组。
+- 新增条目时，直接插入到对应年份的正确倒序位置，不先追加到表尾。
+
+## 自检清单
+
+- 年份是否从新到旧？
+- 组内日期是否从新到旧？
+- 中英文版本顺序是否一致？
