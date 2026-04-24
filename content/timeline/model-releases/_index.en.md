@@ -2,9 +2,9 @@
 title: "ChatGPT Model Release Timeline: Year-by-Year Tracking of Iterations, Capability Leaps, and Rollout Cadence"
 description: "This page tracks major ChatGPT and OpenAI model releases over time, covering version transitions, reasoning upgrades, multimodal milestones, and deployment notes. It provides traceable sources and context so you can compare technical evolution paths, capability boundary shifts, and practical impact across phases, supporting ongoing tracking and model selection decisions."
 date: 2026-04-01
-lastmod: 2026-04-23
-updatedDate: 2026-04-23
-summary: "Apr 2026: OpenAI released ChatGPT Images 2.0, opening a new phase for image generation in ChatGPT"
+lastmod: 2026-04-24
+updatedDate: 2026-04-24
+summary: "Apr 2026: OpenAI released GPT-5.5, its most capable and intuitive model for real-world work"
 ---
 
 sources: [OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) / [OpenAI News](https://openai.com/news/)
@@ -13,6 +13,7 @@ sources: [OpenAI API Changelog](https://developers.openai.com/api/docs/changelog
 
 | **Date**              | **Model/Product**               | **Core features and breakthroughs**                                                                                                                                                                                                                             |
 | --------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2026-04-23**        | **GPT-5.5 / GPT-5.5 Pro**       | OpenAI introduced `GPT-5.5` as its smartest and most intuitive model, rolling out in ChatGPT/Codex for Plus/Pro/Business/Enterprise tiers, with `GPT-5.5 Pro` for Pro/Business/Enterprise. Source: [Introducing GPT-5.5](https://openai.com/index/introducing-gpt-5-5/) |
 | **2026-04-21**        | **ChatGPT Images 2.0**          | OpenAI released `ChatGPT Images 2.0` and framed it as "a new era of image generation."                                                                                                                                                                          |
 | **2026-03 (rollout)** | **GPT-5.4 Thinking (ChatGPT)**  | ChatGPT began rolling out `GPT-5.4 Thinking` (using the "Thinking" naming on ChatGPT); targeted at reasoning, coding, and agentic tasks. Note: ChatGPT naming and rollout cadence may not fully match API model names.                                          |
 | **2026-03 (rollout)** | **GPT-5.4 mini (ChatGPT)**      | Rolled out gradually in ChatGPT; used as a fallback in some plans/scenarios when `GPT-5.4 Thinking` hits rate limits.                                                                                                                                           |

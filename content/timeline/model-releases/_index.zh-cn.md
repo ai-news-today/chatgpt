@@ -2,9 +2,9 @@
 title: "ChatGPT 模型发布时间线：版本迭代、能力跃迁与发布节奏按年份追踪与影响解析"
 description: "该页面按时间梳理 ChatGPT 与 OpenAI 的关键模型发布，覆盖版本切换、推理升级、多模态里程碑与部署备注，并提供可追溯来源与上下文说明，便于你系统比较不同阶段的技术演进路径、能力边界变化和实际落地影响，支持持续跟踪与技术选型判断，并提高跨版本评估与规划效率，并辅助建立持续监测与选型标准。"
 date: 2026-04-01
-lastmod: 2026-04-23
-updatedDate: 2026-04-23
-summary: "2026 年 4 月：OpenAI 发布 ChatGPT Images 2.0，开启 ChatGPT 图像生成新阶段"
+lastmod: 2026-04-24
+updatedDate: 2026-04-24
+summary: "2026 年 4 月：OpenAI 发布 GPT-5.5，面向真实工作场景提供更高能力与更强可用性"
 ---
 
 参考来源：[OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) / [OpenAI News](https://openai.com/news/)
@@ -13,6 +13,7 @@ summary: "2026 年 4 月：OpenAI 发布 ChatGPT Images 2.0，开启 ChatGPT 图
 
 | **时间**            | **模型/产品**                   | **核心功能与突破**                                                                                                                                                                                                                     |
 | ------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2026-04-23**      | **GPT-5.5 / GPT-5.5 Pro**       | OpenAI 发布 `GPT-5.5`，定位为更智能且更易用的新模型，并在 ChatGPT/Codex 向 Plus/Pro/Business/Enterprise 逐步开放；`GPT-5.5 Pro` 面向 Pro/Business/Enterprise 开放。来源：[Introducing GPT-5.5](https://openai.com/index/introducing-gpt-5-5/) |
 | **2026-04-21**      | **ChatGPT Images 2.0**          | OpenAI 发布 `ChatGPT Images 2.0`，并定义为“图像生成的新纪元”。                                                                                                                                                                         |
 | **2026-03（逐步）** | **GPT-5.4 Thinking（ChatGPT）** | ChatGPT 端推出 `GPT‑5.4 Thinking`（以“Thinking”口径呈现）；用于推理/编程/代理式任务。注：ChatGPT 的命名/节奏与 API 机型名可能不完全一致。                                                                                              |
 | **2026-03（逐步）** | **GPT-5.4 mini（ChatGPT）**     | ChatGPT 端逐步推出；在部分方案/场景下作为 `GPT‑5.4 Thinking` 触及速率限制时的回退模型。                                                                                                                                                |
